@@ -15,7 +15,6 @@ def setup():
     
     
     
-    
 def draw():
     global x , y , width 
     while y < 500:
@@ -32,8 +31,9 @@ def draw():
                 rect(x,y,100,90)
             x = x + 100
         y = y + 50
-        
-        
+
+    if mouseX < 100:
+        ellipse(50,100,50,50)
 
         
 def mouseClicked():
@@ -75,6 +75,9 @@ def mouseClicked():
             column_5 = column_5 + 1
         print(column_5)
         
+   
+  
+        
     
-
+    
     
