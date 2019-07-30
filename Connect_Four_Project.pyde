@@ -15,6 +15,7 @@ def setup():
     
     
     
+    
 def draw():
     global x , y , width 
     while y < 500:
