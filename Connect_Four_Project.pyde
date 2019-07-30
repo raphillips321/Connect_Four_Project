@@ -45,9 +45,6 @@ def draw():
         
         
 
-    
-
-    
 
         
 def mouseClicked():
