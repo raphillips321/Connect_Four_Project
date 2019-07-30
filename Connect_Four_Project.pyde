@@ -2,7 +2,7 @@ def setup():
  
     global   y,x , width, speedX , column_0 , column_1 , column_2 , column_3 , column_4, column_5
     size(601,500)
-    background(0)
+
     y = 150
     
     column_0 = 0
@@ -11,12 +11,17 @@ def setup():
     column_3 = 0
     column_4 = 0
     column_5 = 0
+     
+
 
     
     
-    
 def draw():
-    global x , y , width 
+    global   y,x , width, speedX , column_0 , column_1 , column_2 , column_3 , column_4, column_5
+    background(0)
+
+    ellipse(mouseX ,100, 50, 50)
+    y = 150
     while y < 500:
         x = 0
         while x < 600:
@@ -31,21 +36,34 @@ def draw():
                 rect(x,y,100,90)
             x = x + 100
         y = y + 50
+        
+        #circle = 0
+       # while circle <= column_0:
+            #y + 475 - 50 * circle
+            #ellipse(50,y,50,50)
+            #circle += 1
+        
+        
 
-    if mouseX < 100:
-        ellipse(50,100,50,50)
+    
+
+    
 
         
 def mouseClicked():
+    
+    
     global column_0, column_1 , column_2 , column_3 , column_4, column_5
     if mouseX < 100 :
         Y = 475 - 50 * column_0 
+        fill(255)
         ellipse(50, Y, 50, 50)
         if column_0 < 6: 
             column_0 = column_0 + 1 
         print(column_0)
     if mouseX >= 101 and mouseX <=200:
         Y = 475 - 50 * column_1
+        fill(255)
         ellipse(150, Y, 50, 50)
         if column_1 < 6: 
             column_1 = column_1 + 1
