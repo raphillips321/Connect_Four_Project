@@ -13,9 +13,6 @@ def setup():
     column_5 = 0
     
     Player_1 = True
-    
-     
-    
 
     
 def draw():
