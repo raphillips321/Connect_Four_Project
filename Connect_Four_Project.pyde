@@ -105,24 +105,45 @@ def draw():
 
 
 
-    # i = 0
-    # while  i < len(column_0)-1:
-    #     if column_3[i] == Player_1:
-    #         print("Player_1")
-    #         Player_1_counter +=1
-    #     # if Player_1_counter == 4:
-    #     #     print("Player_1")
-
-    #     # elif  column_0[i] == Player_2:
-    #     #            Player_2_counter +=1
-
-
-
     # i = i + 1
 
-    for i in range(len(column_0)):
-        if column_0[i] == Player_1 and column_0[i+1] == Player_1 :
-            print("in colunm 1")
+    c = column_0
+    if len(c) >= 4 and c[0] == c[1] and c[1] == c[2] and c[2] == c[3]:
+        #Winner
+        if c[0] == True:
+            print("Player 1 won")
+        else:
+            print("PLayer 2 won")
+            
+    
+    if len(c) >= 5  and c[1] == c[2] and c[2] == c[3] and c[3] == c[4]:
+        #Winner
+        if c[1] == True:
+            print("Player 1 won")
+        else:
+            print("PLayer 2 won")
+    
+    if len(c) >= 6 and c[2] == c[3] and c[3] == c[4] and c[4] == c[5]:
+        #Winner
+        if c[2] == True:
+            print("Player  1 won")
+            
+        else:
+            print("Player 2 won")
+            
+    if len(c) >= 7 and c[3] == c[4] and c[4] == c[5] and c[5] == c[6]:
+        #Winner
+        if c[3] == True:
+            print("Player  1 won")
+            
+        else:
+            print("Player 2 won")
+            
+    
+            
+            
+            
+
 
 
 
