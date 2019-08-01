@@ -16,7 +16,7 @@ def setup():
 
     Player_1 = True
     Player_2 = False
-    
+
     Player_1_counter = 0
     Player_2_counter = 0
 
@@ -37,9 +37,9 @@ def draw():
         fill(0, 0, 255)
     else: fill(255, 0, 0)
     ellipse(mouseX ,100, 50, 50)
-    
-    
-    
+
+
+
     y = 150
     while y < 500:
         x = 0
@@ -108,7 +108,7 @@ def draw():
         ellipse(550, Y, 50, 50)
         print(column_5)
         i = i + 1
-    
+
 
 
 
@@ -121,117 +121,117 @@ def draw():
                 print("Player 1 won")
                 print("GameOver")
                 GameOver = True
-                
+
                 fill(0)
                 stroke(0)
                 ellipse(mouseX ,100, 50, 50)
-                
+
                 img = loadImage("game.png")
                 image(img ,180,0,250,150)
-          
-                
-                
+
+
+
             else:
                 print("PLayer 2 won")
                 print("GameOver")
                 GameOver = True
-                
+
                 fill(0)
                 stroke(0)
                 ellipse(mouseX ,100, 50, 50)
-                
+
                 img = loadImage("game.png")
                 image(img ,180,0,250,150)
-                
-            
-    
+
+
+
         if len(c) >= 5  and c[1] == c[2] and c[2] == c[3] and c[3] == c[4]:
         #Winner
             if c[1] == True:
                 print("Player 1 won")
                 print("GameOver")
                 GameOver = True
-                
+
                 fill(0)
                 stroke(0)
                 ellipse(mouseX ,100, 50, 50)
-                
+
                 img = loadImage("game.png")
                 image(img ,180,0,250,150)
-                
-                
+
+
             else:
                 print("PLayer 2 won")
                 print("GameOver")
                 GameOver = True
-                
+
                 fill(0)
                 stroke(0)
                 ellipse(mouseX ,100, 50, 50)
-                
+
                 img = loadImage("game.png")
                 image(img ,180,0,250,150)
-                
-    
+
+
         if len(c) >= 6 and c[2] == c[3] and c[3] == c[4] and c[4] == c[5]:
         #Winner
             if c[2] == True:
                 print("Player  1 won")
                 print("GameOver")
                 GameOver = True
-                
+
                 fill(0)
                 stroke(0)
                 ellipse(mouseX ,100, 50, 50)
-                
+
                 img = loadImage("game.png")
                 image(img ,180,0,250,150)
-                
-                
+
+
             else:
                 print("Player 2 won")
                 print("GameOver")
                 GameOver = True
-                
+
                 fill(0)
                 stroke(0)
                 ellipse(mouseX ,100, 50, 50)
-                
+
                 img = loadImage("game.png")
                 image(img ,180,0,250,150)
-                
-            
+
+
         if len(c) >= 7 and c[3] == c[4] and c[4] == c[5] and c[5] == c[6]:
         #Winner
             if c[3] == True:
                 print("Player  1 won")
                 print("GameOver")
                 GameOver = True
-                
+
                 fill(0)
                 stroke(0)
                 ellipse(mouseX ,100, 50, 50)
-                
+
                 img = loadImage("game.png")
                 image(img ,180,0,250,150)
-                
-            
+
+
             else:
                 print("Player 2 won")
                 print("GameOver")
                 GameOver = True
-                
+
                 fill(0)
                 stroke(0)
                 ellipse(mouseX ,100, 50, 50)
-            
+
                 img = loadImage("game.png")
                 image(img ,180,0,250,150)
-                
-                
-      
-                
-                
+
+
+
+
+
 
 
 
